@@ -6,3 +6,15 @@
 @import"projects.css";
 @import"contact.css";
 @import"footer.css";
+
+.cntr{
+    text-align:center;
+}
+
+.projectthumbnail{
+    height:100px;
+}
+
+.linkbox{
+    height:50px;
+}
