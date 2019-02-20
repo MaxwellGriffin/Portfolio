@@ -1,0 +1,38 @@
+@keyframes projecthover_in {
+    from {margin-bottom:0em;}
+    to {margin-bottom:4em;}
+}
+@keyframes projecthoverp_in {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+.projectbox{
+    position:relative;
+}
+.projectrow{
+}
+.projectrow:hover .projectimg{
+    animation-name: projecthover_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.projectrow:hover .projectp{
+    animation-name: projecthoverp_in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.projectimg{
+    width:75%;
+    margin-bottom:0em;
+}
+.projectp{
+    position:absolute;
+    bottom:0;
+    opacity:0;
+}
+.linkbox{
+    
+}
+.linkbox img{
+    height:50px;
+}
