@@ -1,0 +1,52 @@
+@keyframes projecthover_in {
+    from {filter:grayscale(100%);}
+    to {filter:grayscale(0%);}
+}
+@keyframes projecthover_out {
+    from {filter:grayscale(0%);}
+    to {filter:grayscale(100%);}
+}
+@keyframes projecthoverp_in {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@keyframes projecthoverp_out {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+.projectbox{
+    height:30vh;
+}
+.projectrow .projectimg{
+    animation-name:projecthover_out;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    filter:grayscale(100%);
+}
+.projectrow a:hover .projectimg{
+    animation-name: projecthover_in;
+    animation-duration: 0.31s;
+    animation-fill-mode: forwards;
+}
+.projectrow .projectp{
+    animation-name: projecthoverp_out;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.projectrow a:hover .projectp{
+    animation-name: projecthoverp_in;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.projectimg{
+    width:10vw;
+    margin-bottom:0em;
+}
+.projectp{
+    bottom:0;
+    opacity:0;
+}
+
+.projectrow a:hover .expandrow{
+
+}

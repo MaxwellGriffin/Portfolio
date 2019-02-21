@@ -1,38 +1,43 @@
-@keyframes projecthover_in {
-    from {margin-bottom:0em;}
-    to {margin-bottom:4em;}
-}
-@keyframes projecthoverp_in {
+@keyframes projectbox_p_hover_in {
     from {opacity:0;}
     to {opacity:1;}
 }
-.projectbox{
+@keyframes projectbox_p_hover_out {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@keyframes projectbox_img_hover_in{
+    from {filter:grayscale(100%);margin-bottom:0;}
+    to {filter:grayscale(0%);margin-bottom:10vh;}
+}
+@keyframes projectbox_img_hover_out{
+    from {filter:grayscale(0%);margin-bottom:0vh;}
+    to {filter:grayscale(100%);margin-bottom:10hv;}
+}
+.projectcontainer{
     position:relative;
 }
-.projectrow{
-}
-.projectrow:hover .projectimg{
-    animation-name: projecthover_in;
+.projectcontainer img{
+    width:10vw;
+    animation-name: projectbox_img_hover_out;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
 }
-.projectrow:hover .projectp{
-    animation-name: projecthoverp_in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+.projectcontainer:hover img{
+    animation-name: projectbox_img_hover_in;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
 }
-.projectimg{
-    width:75%;
-    margin-bottom:0em;
-}
-.projectp{
+.projectcontainer p{
     position:absolute;
     bottom:0;
-    opacity:0;
+    animation-name: projectbox_p_hover_out;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
 }
-.linkbox{
-    
+.projectcontainer:hover p{
+    animation-name: projectbox_p_hover_in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
-.linkbox img{
-    height:50px;
-}
+.projectboxcontainer{}

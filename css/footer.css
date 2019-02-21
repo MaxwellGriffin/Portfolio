@@ -1,0 +1,22 @@
+@keyframes linkboxhover_in {
+    from {filter: grayscale(100%);opacity:.5;}
+    to {filter:grayscale(0%);opacity:1;}
+}
+
+.linkbox img{
+    filter:grayscale(100%);
+    opacity:.5;
+    width:5vw;
+}
+.linkbox img:hover{
+    animation-name:linkboxhover_in;
+    animation-duration: 0.2s;
+    animation-fill-mode:forwards;
+
+
+}
+footer{
+    margin-top:4em;
+    height:7em;
+    background-color:#F8F9FA;
+}

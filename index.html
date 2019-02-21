@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Maxwell Griffin</title>
+    <title>Maxwell Griffin - Home</title>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <!--fonts.google.com-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -24,10 +24,54 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/maxwell.griffin@outlook.com" method="POST" id="emailform">
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" name="name" id="inputName" placeholder="Enter name">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" form="emailform" class="btn btn-primary" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header>
-        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Welcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Projects</a>
+                    <a class="nav-item nav-link" href="#">Resume</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top:2em">
             <div class="row">
                 <div class="col-sm-auto">
                     <img src="./assets/img/placeholder.png" alt="Headshot" style="height:100px">
@@ -46,7 +90,62 @@
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top:4em;margin-bottom:4em">
+                <div class="col-sm cntr">
+                    <h3>My Projects</h3>
+                </div>
+            </div>
+            <div class="row" style="height:22vh;">
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="#">
+                        <div class="projectcontainer">
+                            <img src="./assets/img/sample.png" alt="" class="">
+                            <p class="">Lorem ipsum dolor</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="margin-top:4em;margin-bottom:4em">
                 <div class="col-sm cntr">
                     <h3>About me</h3>
                 </div>
@@ -65,62 +164,28 @@
                         massa.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm cntr">
-                    <h3>My Projects</h3>
-                </div>
-            </div>
-            <div class="row projectrow">
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-                <div class="col-sm cntr">
-                    <img src="./assets/img/sample.png" alt="" class="projectimg">
-                    <p class="projectp">Lorem ipsum dolor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm cntr">
-                    <h3>My Links</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-auto linkbox">
-                    <img src="./assets/img/sample.png" alt="">
-                </div>
-                <div class="col-sm-auto linkbox">
-                    <img src="./assets/img/sample.png" alt="">
-                </div>
-                <div class="col-sm-auto linkbox">
-                    <img src="./assets/img/sample.png" alt="">
-                </div>
-
-            </div>
-
-
         </div>
-
     </main>
 
     <footer>
+        <div class="container">
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-sm-auto linkbox">
+                <a href="https://github.com/MaxwellGriffin" target="_blank"><img src="./assets/img/github.png"
+                        alt=""></a>
+            </div>
+            <div class="col-sm-auto linkbox">
+                <a href="#"><img src="./assets/img/linkedin.png" alt=""></a>
+            </div>
+            <div class="col-sm-auto" style="display:flex;align-items:center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Email
+                    Me</button>
+            </div>
 
+        </div>
+    </div>
     </footer>
 
 </body>
