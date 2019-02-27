@@ -37,19 +37,19 @@
                     <form action="https://formspree.io/maxwell.griffin@outlook.com" method="POST" id="emailform">
                         <div class="form-group">
                             <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-                            <label for="inputName">Name</label>
+                            <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Enter email">
+                            <label for="inputName" type="text" name="name">Name</label>
                             <input type="text" class="form-control" name="name" id="inputName" placeholder="Enter name">
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" form="emailform" class="btn btn-primary" type="submit">Send</button>
+                    <button type="submit" form="emailform" class="btn btn-primary">Send</button>
                 </div>
             </div>
         </div>
