@@ -18,7 +18,7 @@
     position:relative;
 }
 .projectcontainer img{
-    width:10vw;
+    width:8vw;
     animation-name: projectbox_img_hover_out;
     animation-duration: 1s;
     animation-fill-mode:forwards;
