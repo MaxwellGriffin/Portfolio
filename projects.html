@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maxwell Griffin - Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <!--fonts.google.com-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--getbootstrap.com-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formspree.io/maxwell.griffin@outlook.com" method="POST" id="emailform">
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Enter email">
+                            <label for="inputName" type="text" name="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="inputName" placeholder="Enter name">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" form="emailform" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Welcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="projects.html">Projects</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top:2em">
+            <div class="row">
+                <div class="col-sm-auto">
+                    <h1>My Projects</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row" style="margin-top:4em;margin-bottom:4em">
+                <a name="elevennote"></a>
+                <div class="col-sm cntr">
+                    <h3>Eleven Note</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm cntr">
+                    <img src="./assets/img/ElevenNote.png" alt="" class="" style="width:100px;height:100px">
+                </div>
+            </div>
+            <div class="row" style="margin-top:2em">
+                <div class="col-sm cntr">
+                    <p>Eleven Note was a practice project that I created for my .NET Blue Badge at Eleven Fifty Academy. It is an ASP.NET Web MVC that I created using Visual Studio. The purpose of the project is to create, read, update and delete "Notes" in a backing SQL database. Later, as part of additional practice, I created an API for Eleven Note as well. The source code for Eleven Note is viewable on my github, which is linked below.</p>
+                    <a href="https://github.com/MaxwellGriffin/ElevenNote" target="_blank">Eleven Note on GitHub</a>
+                </div>
+            </div>
+            <div class="row" style="margin-top:4em;margin-bottom:4em">
+                <a name="messageboard"></a>
+                <div class="col-sm cntr">
+                    <h3>Message Board</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm cntr">
+                    <img src="./assets/img/MessageBoard.png" alt="" class="" style="width:100px;height:100px">
+                </div>
+            </div>
+            <div class="row" style="margin-top:2em">
+                <div class="col-sm cntr">
+                    <p>Message Board is a project that I created for my .NET Blue Badge at Eleven Fifty Academy. It is an ASP.NET Web MVC that I created in Visual Studio. Message Board is designed to emulate the old internet forums that I used to enjoy visiting. It uses a SQL database with 3 custom tables that I created complete with full CRUD on each. Message Board also has custom user options like the ability to change your profile picture. Some cool features include the ability to format text within a post using custom formatting tags, including the ability to post functioning links and images. This is accomplished through a text-parsing state machine.</p>
+                    <a href="https://github.com/MaxwellGriffin/MessageBoard" target="_blank">Message Board on GitHub</a>
+                </div>
+            </div>
+            <div class="row" style="margin-top:4em;margin-bottom:4em">
+                <a name="vacationsunited"></a>
+                <div class="col-sm cntr">
+                    <h3>Vacations United</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm cntr">
+                    <img src="./assets/img/VacationsUnited.png" alt="" class="" style="width:100px;height:100px">
+                </div>
+            </div>
+            <div class="row" style="margin-top:2em">
+                <div class="col-sm cntr">
+                    <p>Vacations United is my group project which was created to earn my .NET Red Badge at Eleven Fifty Academy. It uses an Angular front end and ASP.NET Web API back end and is styled using Angular Material. The purpose of Vacations United is to be able to create a vacation Group, an Itinerary, and select Destinations from a pre-made list, adding them to your Itinerary on specific days to outline your "vacation" across the United States.</p>
+                    <a href="https://github.com/MaxwellGriffin/VacationsAngular" target="_blank">Vacations United on GitHub (Front end)</a> |
+                    <a href="https://github.com/MaxwellGriffin/VacationsUnited" target="_blank">Vacations United on GitHub (Back end)</a>                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+        <hr>
+        <div class="row justify-content-center">
+            <p>Project icons (c) Maxwell Griffin</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-auto linkbox">
+                <a href="https://github.com/MaxwellGriffin" target="_blank"><img src="./assets/img/github.png" alt=""></a>
+            </div>
+            <div class="col-sm-auto linkbox">
+                <a href="https://www.linkedin.com/in/maxwell-griffin-dotnet/" target="_blank"><img src="./assets/img/linkedin.png" alt=""></a>
+            </div>
+            <div class="col-sm-auto" style="display:flex;align-items:center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Email Me</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
